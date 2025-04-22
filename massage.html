@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>코코몬드 개발중</title>
+	<link href="stylesheets/scrolling-nav.css" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheets/header_footer.css">
+
+	<style>
+		#massage_wrap {
+			padding-top: 40px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		
+		#mom_massage img,
+		#baby_massage img {
+			width: 100%;
+			max-width: 1200px;
+			padding-top: 175px;
+		}
+		
+		ul.tabs {
+			list-style: none;
+			height: 50px;
+			border-bottom: 1px solid #eee;
+			border-left: 1px solid #eee;
+			width: 100%;
+			font-size: 16px;
+			box-sizing: border-box;
+			width: 1189px;
+			margin: 0 auto;
+			position: fixed;
+		}
+		
+		ul.tabs li {
+			float: left;
+			text-align: center;
+			cursor: pointer;
+			box-sizing: border-box;
+			width: 50%;
+			height: 122px;
+			line-height: 171px;
+			border: 1px solid #eee;
+			font-weight: bold;
+			background: #fafafa;
+			overflow: hidden;
+			position: relative;
+			
+			border-bottom: 3px solid #eee;
+		}
+		ul.tabs li.tabs_heigth {
+		    height: 100px;
+			line-height: 130px;
+		}
+		
+		ul.tabs li.active {
+			background: #FFFFFF;
+			border-bottom: 3px solid #005850;
+		}
+		
+		.tab_container {
+			border-top: none;
+			clear: both;
+		}
+		
+		.tab_content {
+			padding: 5px;
+			display: none;
+			text-align: center;
+		}
+		
+		.main_pc {
+			display: block;
+		}
+		
+		.main_mb {
+			display: none;
+		}
+		
+		@media all and (min-width:320px) and (max-width:860px) {
+			ul.tabs {
+				width: 100%;
+			}
+			.main_pc {
+				display: none;
+			}
+			.main_mb {
+				display: block;
+			}
+			#massage_wrap {
+				padding-top: 70px;
+			}
+		}
+	</style>
+
+
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="javascripts/jquery.easing.min.js"></script>
+	<script src="javascripts/cocomonde.js"></script>
+	<script src="javascripts/scrolling-nav.js"></script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<!--헤더-->
+	<header class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="logo_box mb_nav">
+			<a href="#">
+				<img src="images/cocomonde_logo.png" alt="코코몬드 로고">
+			</a>
+		</div>
+
+		<nav class="pc_nav collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav menu_hover">
+				<li><a class="page-scroll" href="index.html#about_cm">브랜드소개</a></li>
+				<li><a class="page-scroll" href="index.html#point3s">제품특징</a></li>
+				<li><a class="page-scroll" href="index.html#babyoil_ani">베이비오일</a></li>
+				<li class="logo_pc">
+					<a class="page-scroll" href="#"><img src="images/cocomonde_logo.png" alt="코코몬드 로고"></a>
+				</li>
+				<li><a class="page-scroll" href="index.html#momoil_ani">맘오일</a></li>
+				<li><a class="page-scroll" href="index.html#package_info">패키지특징</a></li>
+				<li><a class="page-scroll" href="massage.html">마사지방법</a></li>
+				<li><a class="page-scroll" href="index.html#none">SHOP</a></li>
+			</ul>
+		</nav>
+
+		<!--모바일페이지 menu-->
+		<nav class="mb_nav collapse navbar-collapse navbar-ex1-collapse">
+			<div id="menu_bg"></div>
+			<div id="menu_btn"> <img src="images/meunicon.png" alt="메뉴아이콘" /> </div>
+			<div id="menu">
+				<ul class="nav navbar-nav menu_hover">
+					<li><a class="page-scroll" href="index.html#about_cm">브랜드소개</a></li>
+					<li><a class="page-scroll" href="index.html#point3s">제품특징</a></li>
+					<li><a class="page-scroll" href="index.html#babyoil_ani">베이비오일</a></li>
+					<li><a class="page-scroll" href="index.html#momoil_ani">맘오일</a></li>
+					<li><a class="page-scroll" href="index.html#package_info">패키지특징</a></li>
+					<li><a class="page-scroll" href="massage.html">마사지방법</a></li>
+					<li><a class="page-scroll" href="index.html#none">SHOP</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--모바일페이지 menu End-->
+	</header>
+	<!--//헤더-->
+
+	<!--content-->
+	<div id="massage_wrap">
+		<ul class="tabs">
+			<li class="active" rel="mom_massage">
+			<img src="images/mama.png" width="45px" style="position:relative; top:15px; margin-right:15px;">엄마 마사지
+			</li>
+			<li rel="baby_massage"><img src="images/bebe.png" width="45px" style="position:relative; top:15px; margin-right:15px;">아기 마사지</li>
+		</ul>
+		<div class="tab_container">
+			<!-- #tab1 -->
+			<div id="mom_massage" class="tab_content"> <img class="main_pc" src="images/mom_massage.jpg" alt=""> <img class="main_mb" src="images/mom_massage_mb.jpg" alt=""> </div>
+
+			<!-- #tab2 -->
+			<div id="baby_massage" class="tab_content"> <img class="main_pc" src="images/baby_massage.jpg" alt=""> <img class="main_mb" src="images/baby_massage_mb.jpg" alt=""></div>
+			<!-- //tab_container -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!--//content-->
+
+	<!--탑버튼-->
+	<div id="topbtn">
+		<a href="#top">TOP<i class="xi-caret-up"></i></a>
+	</div>
+	<!--//탑버튼-->
+
+	<!--풋터 footer-->
+	<footer>
+		<div>
+			<ul>
+				<li class="title">제조판매업자</li>
+				<li>엠에이에스 인터내셔날(주)</li>
+				<li>경기도 남양주시 진건읍 진관산단로 68</li>
+			</ul>
+			<ul>
+				<li class="title">제조업자</li>
+				<li>다비드 화장품</li>
+				<li>경기도 부천시 오정구 석천로 453번길 64-17</li>
+			</ul>
+
+			<ul>
+				<li class="title">고객센터</li>
+				<li class="call">070 - 8677 - 3600
+					<br> 010 - 9081 - 2410</li>
+			</ul>
+		</div>
+	</footer>
+	<!--//풋터 footer-->
+
+
+</body>
+
+</html>

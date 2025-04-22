@@ -1,0 +1,130 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*reset*/
+ol,ul,li,h1,h2,h3,h4,h5,p,div,span,a,header,footer,img,body,html{margin: 0 ; padding: 0;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+/*default*/
+ol,ul,li{list-style: none;  font-size: 16px; font-family: 'Noto Sans KR', sans-serif;background-color: none;     text-align: center;}
+span{ font-size: 16px; font-family: 'Noto Sans KR', sans-serif;background-color: none;}
+p{width: 100%;font-size: 20px; font-family: 'Noto Sans KR', sans-serif;background-color: none;color: #989797; margin-bottom: 36px; line-height: 35px;}
+h1,h2,h3{font-family: 'Noto Sans KR', sans-serif; background-color: none;color:#666564;}
+img{border:none;}
+a{text-decoration: none; color:#000;}
+h1.title{margin-bottom: 30px;}
+	
+/*header 헤더*/
+header{background: url('http://img2.best300.co.kr/bm/pre_cocomonde/header.jpg') no-repeat; overflow: hidden;  box-sizing: border-box; position: fixed; width: 100%; z-index: 999;box-shadow: 0 0 10px rgba(0,0,0,0.4);  }
+.logo_box{text-align: center;}
+/*nav 네비 */
+.mb_nav{display: none;}
+.pc_nav{margin: 0 auto; width: 900px;}
+.pc_nav ul li{float: left; font-size: 18px;margin: 30px 10px 0px; }
+.pc_nav ul li a{color: #fff;}
+.pc_nav ul li a:hover{color: #ffcd37;}
+.pc_nav ul li.logo_pc{margin: 0px 15px;}
+.pc_nav ul li:nth-child(1){margin-left: 60px;}
+nav ul li.active a{color: #ffbd45;}
+
+/*footer 푸터*/
+footer{text-align: center;  background: #eee;}
+footer div{width: 60%; margin: 0 auto;padding: 34px 20px;overflow: hidden;}
+footer ul{width: 33.3%; float: left; box-sizing: border-box; border-left:1px solid #333;}
+footer ul:first-child{border:none;}
+footer ul li{line-height: 25px;color:#666;font-weight: bold;}
+footer ul li.title{font-size: 20px; font-weight: bold; margin-bottom: 10px; color: black;}
+footer ul li.title::after{display: block; content:''; width: 40px; background: #333; height: 4px;margin: 10px auto 5px; }
+footer ul li.call{font-size: 20px;font-weight: bold;}
+
+/*탑버튼*/
+#topbtn{position:fixed; right: 25px; bottom: 25px; width:60px; height: 60px; background: #7bc456; display:none; border-radius: 60px; box-shadow: 4px 5px 5px 0px #6a6969;}
+#topbtn a {display: block; text-align: center; margin-top: 7px; font-weight: bold; color: #333;}
+#topbtn a .xi-caret-up{position: absolute; top: 45%; left: 33%; color: #fff; font-size: 20px;}
+#topbtn:hover{ opacity: 0.5; filter: "alpha(opacity=50)"; -ms-filter: "alpha(opacity=50)";}
+
+
+/*미디어 쿼리 시작*/
+@media all and (min-width:320px) and (max-width:860px){
+	header{ padding: 0px; }
+	.logo_box{margin: 1% 0%;}    
+	p{font-size: 14px; line-height: 25px;}
+	
+	/*header 헤더 mb*/
+	
+
+		/*메뉴*/	
+		body{overflow-x:hidden;
+			}
+		p{margin-bottom: 20px;}
+		
+		.pc_nav{display: none;
+			}
+		.mb_nav{display: block;}
+	
+		#menu_btn{
+			cursor: pointer;
+			display: block;
+			margin: 10px 20px 0px 0px;
+			position: absolute;
+			        right: -6px;
+    top: 6px;
+			transition: all 0.3s linear;
+			z-index: 999;
+		}
+	#menu{display: none;}
+	
+	#menu.active{display: block;		
+    height: 100%;
+    background: #ffffff;
+    top: 0px;
+    transition: all 0.3s linear;
+    z-index: 999;
+		}
+	
+	
+	#menu ul li a{color: #333; 
+						display:block;
+						padding: 14px 0px;
+		}
+	#menu ul li a:hover{color: #ffcd37;}
+		#menu ul li:hover{background: #3e8c40 }
+	#menu ul li:hover a{color: #fff;}
+	/*메뉴 active*/
+		body.active{overflow-y:hidden;
+		}
+/*
+		#menu_bg.active{z-index:998;
+			width:100%; 
+			height:100%; 
+			position:fixed;
+			top: 0px;
+			right: 0;
+			overflow-y:hidden;
+			background:rgba(0, 0, 0, 0.5); 
+			background:#000; 
+			opacity:0.5;
+ 		}
+	
+		#menu_btn.active{
+			right: 210px;
+		}
+
+		#menu.active{
+			right: 0px;
+		}*/
+	
+	/*footer 푸터 mb*/
+	footer{text-align: center;}
+	footer div{width: 100%;box-sizing: border-box;}
+	footer ul{width: 100%; float: initial; border:none;margin-bottom: 3%;}
+	footer ul li{font-size:12px;}
+	footer ul li.title{font-size:16px;}
+	footer ul li.title::after{background: #333; height: 3px;width: 25px; margin: 5px auto 3px;}
+	footer ul li.call{font-size:15px;}
+	
+	/*탑버튼*/
+	#topbtn{right: 10px; bottom: 10px; width:50px; height: 50px;}
+	#topbtn a {margin-top: 4px; font-size: 12px;}
+	#topbtn a .xi-caret-up{ top: 45%; left: 33%;font-size: 16px;}
+	
+	
+	
+}

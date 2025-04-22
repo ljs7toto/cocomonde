@@ -1,0 +1,231 @@
+/*기본 레이아웃*/
+.content_wrap>img{width: 100%;}
+.content_wrap{padding:62px 0;}
+.contents{width: 1200px;margin: 0 auto; }
+.lines{content: ''; display: block; height: 3px; width: 150px; background: #1a3600; margin: 10px auto 0px;}
+.lines2{content: ''; display: block; height: 3px; width: 230px; background: #1d626e; margin: 8px auto;}
+.lines3{content: ''; display: block; height: 3px; width: 270px; background: #1d626e; margin: 8px auto 40px;}
+.lines4{content: ''; display: block; height: 3px; width: 250px; background: #1d626e; margin: 8px auto 40px;}
+
+/*h2 공통*/
+.contents h2{font-size: 35px; color: #1d626e;}
+.contents h2.title{margin-bottom: 40px;font-size: 36px; color: #fff;}
+.contents p span{font-size: 25px; color: #1d626e;}
+
+/*메인페이지 첫번째 페이지*/
+#wrapper{overflow: hidden;}
+#wrapper div{text-align: center; display: block; }
+#wrapper #main_banner{padding-top: 60px;}
+#wrapper #main_banner img{width: 100%;}
+.main_pc{display: block;}
+.main_mb{display: none;}
+
+
+/*about_cm 2번째 페이지*/
+#about_cm{padding-top: 120px;}
+#about_cm h1{font-size: 36px;}
+#about_cm h1 span{font-size: 38px;}
+.intro_graphic{overflow: hidden; margin: 0 auto;}
+.intro_graphic .graphic{float: left; display: block; width: 33%;}
+.intro_text{clear: both; margin:77px auto 0px; }
+
+/*coconut_info 4번째 페이지*/
+#coconut_info h1{font-size: 60px; color: #9a4527; margin-bottom: 52px;}
+#coconut_info p{line-height: 40px;}
+
+#momoil_info p,#babyoil_info p{margin: 15px 0px 40px;}
+
+#package_info{padding: 120px 0px 0px;}
+#package_info h3{color: #000;}
+#package_info p{margin: 40px 0px 30px; color: #4f412b; }
+
+/*베이비 오일 오일 부분 css*/
+#babyoil_ani{background: #71c8cf;}
+#babyoil_ani .animation {width: 820px; margin: 0 auto;overflow: hidden;margin: 122px auto 0px;}
+.bottle,.bottle2{    position: relative;
+    background-image: url(../images/cocomonde_line_w.png);
+    width: 196px;
+    height: 426px;
+    margin: 0 43px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    float: left;
+    background-size: cover;
+    cursor: pointer;}
+
+.icons {    overflow: hidden;
+    margin: 39px auto 0px;
+    float: left;
+    width: 32%  }
+.icons div {cursor: pointer;text-align: center;}
+.icons img {width: 100%;max-width: 189px;}
+
+.icons .hohoba{margin-left: 55px;}
+.icons .dalmagi{margin-right: 55px;}
+#babyoil_ani,#momoil_ani{padding: 137px 0px;}
+#babyoil_ani .mb_icons {display: none;}
+#babyoil_ani .pc_icons {display: block;}
+.waterwrap,.waterwrap2{     width: 72px;
+    height: 48%;
+    position: absolute;
+    bottom: 49px;
+    left: 23px; }
+.waterfull::before {content: ''; font-size: 16px; font-weight: bold; text-align: center; position: absolute; border-radius: 7px; border-top-left-radius: 0px; border-top-right-radius: 0px; width: 100%; bottom: 0; animation: wipe 6s cubic-bezier(.20, .20, .20, .20) forwards;}
+	
+@keyframes wipe {
+	0% {
+		height: 0;
+	}
+	10% {
+		content: '\a''\a''80%''\a''\a''\a''코코넛' '\a''오일'; 
+		white-space: pre;
+		height: 80%;
+		background: #ed7160;
+	}
+	60% {
+		content:'\a''\a''18%' '\a''\a''\a''호호바' '\a''오일';
+		white-space: pre;
+		height: 86%;
+		background: #e66e5d;
+	}
+	90% {
+		content: '\a''\a''1%''\a' '\a''\a''\a''아보카도' '\a' '오일';
+		white-space: pre;
+		height: 99%;
+		background: #8ec31f;
+	}
+	100% {
+		content:'\a' '1%' '\a''\a' '\a''\a''\a''달맞이' '\a' '오일';
+		white-space: pre;
+		height: 100%;
+		background: #ffe109;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+}
+
+
+/*맘오일 부분 css*/
+#momoil_ani{background: #f9bbb7;}
+#momoil_ani .animation{width: 820px; margin: 0 auto;overflow: hidden;margin: 66px auto 0px;}
+.waterfull2::before {content: ''; font-size: 16px; font-weight: bold;text-align: center; position: absolute; border-radius: 7px; border-top-left-radius: 0px; border-top-right-radius: 0px; width: 100%; bottom: 0; animation: wipe2 6s cubic-bezier(.20, .20, .20, .20) forwards;}
+
+#momoil_ani .mb_icons {display: none;}
+#momoil_ani .pc_icons {display: block;}
+.icons.argan{float: initial; width: 100%;}
+
+@keyframes wipe2 {
+	0% {
+		height: 0;
+	}
+	30% {
+		content: '\a''\a''80%''\a''\a''\a''\a''코코넛' '\a''오일';
+		white-space: pre;
+		height: 80%;
+		color: #000;
+		background: #ed7160;
+	}
+	50% {
+		content: '\a''\a''11.5%' '\a''\a''\a''\a''호호바' '\a''오일';
+		white-space: pre;
+		height: 98%;
+		color: #000;
+		background: #e66e5d;
+	}
+	70% {
+		content: '\a''\a''5%''\a''\a''\a''\a''만다린' '\a''오일' ;
+		white-space: pre;
+		height: 99%;
+		color: #000;
+		background: #ffe109;
+	}
+	85% {
+		content:'\a''\a''3%''\a''\a''\a''\a''로즈힙씨''\a' '오일' ;
+		white-space: pre;
+		height: 100%;
+		background:#ffc000;
+		color: #000;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	100% {
+		content: '\a''\a''0.5%''\a''\a''\a''아르칸''\a''트리커넬''\a''오일';
+		white-space: pre;
+		height: 100%;
+		background: #e60012;
+		color: #fff;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+}
+
+
+#package_info img.packani{width: 60%;}
+
+#lastpage{padding-top: 0px;}
+
+/*미디어 쿼리 시작 모바일 반응형*/
+@media all and (min-width:320px) and (max-width:860px){
+	
+	#wrapper #main_banner {padding-top: 50px;}
+	
+	
+	.content_wrap br{display: none;}
+	/*기본 레이아웃*/
+	.contents{width: initial; margin: 0 auto;padding: 0px 6%; box-sizing: border-box; }
+	.lines{ width: 90px; margin: 1% auto 0px;}
+	.lines2{ width: 170px;  margin: 1% auto;}
+	.lines3{ width: 190px;  margin: 2% auto 5%;}
+	.lines4{width: 180px;  margin: 2% auto 5%;}
+	
+	/*h2 공통*/
+	.contents h2{font-size: 26px; }
+	.contents h2.title{margin-bottom: 10px; font-size: 24px; color: #fff;}
+	.contents p span{font-size: 18px; color: #1d626e;}
+	
+	/*메인페이지 첫번째 페이지 mb*/
+	#wrapper img{width: 100%;}
+	.intro_text{margin-top: 10px;}
+	.main_pc{display: none;}
+	.main_mb{display: block;}
+	
+	#about_cm,#babyoil_ani, #momoil_ani,#package_info{padding: 80px 0px 60px;}
+	#coconut_info,#lastpage{padding-top: 30px;}
+	#point3s{padding-bottom: 0px;}
+	#about_cm h1{font-size: 20px;}	
+	#about_cm h1 span{font-size: 22px;}
+	
+	/*coconut_info 4번째 페이지*/
+	#coconut_info h1{font-size: 30px;margin-bottom: 5%;}
+	#coconut_info p{line-height: 30px;}
+	
+	#momoil_info p,#babyoil_info p{margin: 15px 0px 40px;}
+	#package_info .contents{padding: 0px;}
+	#package_info h3{color: #000;}
+	#package_info p{margin: 20px auto 30px; color: #4f412b;padding: 0 6%;box-sizing: border-box;}
+	#package_info img.packani{width: 100%;}
+	
+	/*베이비오일 부분 css*/
+	#babyoil_ani .pc_icons {display: none;}
+	#babyoil_ani .mb_icons {display: block;}
+	
+	#babyoil {padding: 10px 0px;}
+	
+	#babyoil_ani .animation,#momoil_ani .animation{width: 100%; box-sizing: border-box; padding: 4% ; margin: 0px auto;}
+	.bottle,.bottle2 {margin: 0 auto; float: initial; cursor: pointer;}
+	.icons {width: 100%; margin-top: 5%;}
+	#babyoil_ani .contents,#momoil_ani .contents{padding: 0px;}
+	#babyoil_ani .icons div {width: 25%; float: left;}
+	/*.waterwrap,.waterwrap2 {width: 61px; height: 48%; position: absolute; right: 65px; bottom: 43px;left:0px;}*/
+	.icons .hohoba{margin: 0;}
+	/*맘오일 부분 css*/
+	#momoil_ani .pc_icons {display: none;}
+	#momoil_ani .mb_icons {display: block;}
+	#momoil_ani .icons div {width: 20%; float: left;}
+	
+	
+		
+	
+
+}
